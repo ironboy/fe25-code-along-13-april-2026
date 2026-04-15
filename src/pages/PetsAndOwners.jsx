@@ -20,6 +20,7 @@ export default function PetsAndOwners() {
       alt="A dog and its owner"
       heading="Pets & owners"
     />
+    <p>Here we use our own custom hook to load all data.</p>
     <h3>Pets</h3>
     <section className="pets">
       {pets.map(({ id, name, species }) => <div key={id}>
