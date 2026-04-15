@@ -1,4 +1,5 @@
 import Lorem from "../parts/Lorem";
+import HeroImage from "../parts/HeroImage";
 
 PetsAndOwners.route = {
   path: '/pets-and-owners',
@@ -8,7 +9,11 @@ PetsAndOwners.route = {
 
 export default function PetsAndOwners() {
   return <>
-    <h2>Pets & owners</h2>
+    <HeroImage
+      src="dog-and-owner.webp"
+      alt="A dog and its owner"
+      heading="Pets & owners"
+    />
     <p>Here will show pets and pet owners.</p>
     <Lorem paragraphCount={3} />
   </>;
