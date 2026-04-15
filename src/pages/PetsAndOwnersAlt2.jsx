@@ -8,8 +8,8 @@ PetsAndOwnersAlt2.route = {
   loader: async () => {
     return await Promise.all(
       [
-        fetch('/json/pets.json').then(response => response.json()),
-        fetch('/json/petOwners.json').then(response => response.json())
+        fetch('/api/pets').then(response => response.json()),
+        fetch('/api/petOwners').then(response => response.json())
       ]
     );
   }
